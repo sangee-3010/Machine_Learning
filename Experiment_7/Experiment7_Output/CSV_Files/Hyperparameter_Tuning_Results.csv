@@ -1,0 +1,19 @@
+Model,Setting,Best Parameters,Best CV F1
+SVM,No-PCA,"{'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}",0.9674103219883271
+SVM,With-PCA,"{'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}",0.9617869598432259
+Naive Bayes,No-PCA,{'var_smoothing': 1e-11},0.9170390883626178
+Naive Bayes,With-PCA,{'var_smoothing': 1e-11},0.8762315742654196
+KNN,No-PCA,"{'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'uniform'}",0.966707720140556
+KNN,With-PCA,"{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'uniform'}",0.9604565817559673
+Logistic Regression,No-PCA,"{'C': 1, 'solver': 'liblinear'}",0.9640480895915677
+Logistic Regression,With-PCA,"{'C': 0.1, 'solver': 'liblinear'}",0.970137455017403
+Decision Tree,No-PCA,"{'criterion': 'entropy', 'max_depth': 5, 'min_samples_split': 10}",0.9038733037902791
+Decision Tree,With-PCA,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}",0.9328860900640704
+Random Forest,No-PCA,"{'max_depth': 5, 'min_samples_split': 2, 'n_estimators': 100}",0.9552850541704228
+Random Forest,With-PCA,"{'max_depth': None, 'min_samples_split': 5, 'n_estimators': 200}",0.9429802506536482
+AdaBoost,No-PCA,"{'learning_rate': 1.0, 'n_estimators': 200}",0.9609916988128233
+AdaBoost,With-PCA,"{'learning_rate': 1.0, 'n_estimators': 100}",0.954658858115838
+Gradient Boosting,No-PCA,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",0.9552837817600958
+Gradient Boosting,With-PCA,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",0.9398474028962844
+XGBoost,No-PCA,"{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}",0.9587190694813705
+XGBoost,With-PCA,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",0.9518572969319237
